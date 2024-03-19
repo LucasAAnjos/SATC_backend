@@ -6,3 +6,10 @@
   <li>Request HTML</li>
   <li>Criação de classe Player, Getter e Setter, utilização dentro da classe Main</li>
 </ul>
+
+## Exercício 3
+###  
+<ul>
+  <li>Uso de SpringBeans</li>
+  <li>Criação de Context, Service, Repositório e Interface</li>
+</ul>
