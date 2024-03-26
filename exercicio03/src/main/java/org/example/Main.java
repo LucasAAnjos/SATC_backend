@@ -5,17 +5,19 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class Main {
     public static void main(String[] args){
         var context = new AnnotationConfigApplicationContext(ProjectConfiguration.class);
-        Pokemon pokemon = context.getBean(Pokemon.class, "Charmander", 20);
+        Movie movie1 = context.getBean(Movie.class, "Titanic", "Ação");
+        Actor actor1 = context.getBean(Actor.class, "Tião Cruise", "Brasileiro");
 
-        PokemonService pokemonService  = context.getBean(PokemonService.class);
+        movie1.setAble(Boolean.TRUE);
+        actor1.setAble(Boolean.TRUE);
 
-        pokemonService.capture(pokemon);
-        pokemonService.capture(pokemon);
-        pokemonService.capture(pokemon);
-        pokemonService.capture(pokemon);
-        pokemonService.capture(pokemon);
-        pokemonService.capture(pokemon);
-        pokemonService.capture(pokemon);
+        Indication indication1 = context.getBean(Indication.class, movie1, "Melhor Filme de Romance");
+        Indication indication2 = context.getBean(Indication.class, actor1, "Melhor Ator de Terror");
+
+        OscarService oscarService  = context.getBean(OscarService.class);
+
+        oscarService.indicate(indication1);
+        oscarService.indicate(indication2);
 
     }
 }

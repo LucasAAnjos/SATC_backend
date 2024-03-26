@@ -1,6 +1,7 @@
 package org.example;
 
 public interface StorageRepository {
-    void storage(String text);
+    void storageCSV(String text);
+
     String retrieve();
 }

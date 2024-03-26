@@ -9,9 +9,9 @@ import java.io.PrintWriter;
 public class FileStorageRepository implements StorageRepository{
 
     @Override
-    public void storage(String text) {
+    public void storageCSV(String text) {
         try{
-            FileOutputStream file = new FileOutputStream("pc.txt", true);
+            FileOutputStream file = new FileOutputStream("oscar.txt", true);
             PrintWriter printWriter = new PrintWriter(file);
             printWriter.append(text);
             printWriter.close();
