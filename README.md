@@ -13,3 +13,10 @@
   <li>Uso de SpringBeans</li>
   <li>Criação de Context, Service, Repositório e Interface</li>
 </ul>
+
+## Exercício 4
+###  
+<ul>
+  <li>Uso de Spring Web</li>
+  <li>Criação de Controller e requisição HTTP</li>
+</ul>
