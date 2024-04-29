@@ -20,3 +20,10 @@
   <li>Uso de Spring Web</li>
   <li>Criação de Controller e requisição HTTP</li>
 </ul>
+
+## Exercício 5
+###  
+<ul>
+  <li>Modelagem REST</li>
+  <li>Protótipo da estrutura da API</li>
+</ul>
